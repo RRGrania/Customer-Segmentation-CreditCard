@@ -15,7 +15,7 @@ This project applies unsupervised learning (KMeans clustering) to segment credit
 5. PCA for visualization
 6. Cluster interpretation and business recommendations
 
-## 📈Visualizations
+## Visualizations
 
 - PCA Scatter Plot
 - Cluster Feature Means (Bar Chart)
