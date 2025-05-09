@@ -1,4 +1,3 @@
-readme_content = """
 # Customer Segmentation using K-Means
 
 This project applies **unsupervised machine learning** techniques, specifically **K-Means clustering**, to segment credit card customers into distinct behavioral groups based on their spending patterns and financial activity.
