@@ -1,36 +1,47 @@
-# Customer Segmentation using KMeans
+Customer Segmentation using KMeans
 
-This project applies unsupervised learning (KMeans clustering) to segment credit card customers into behavioral groups based on spending patterns and financial activity.
+This project applies unsupervised learning (K-Means clustering) to segment credit card customers into behavioral groups based on their spending patterns and financial activity.
 
-## Dataset
-- Source: [Kaggle - Credit Card Customer Segmentation](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata)
-- Contains features such as balance, purchases, cash advance, credit limit, and payments.
+Dataset
+Source: Kaggle - Credit Card Customer Segmentation
 
-##  Project Steps
+Contains features such as balance, purchases, cash advance, credit limit, and payments.
 
-1. Data Cleaning and Imputation
-2. Feature Engineering (Ratios)
-3. Normalization (StandardScaler)
-4. Clustering with KMeans (K=2)
-5. PCA for visualization
-6. Cluster interpretation and business recommendations
+Project Steps
+Data Cleaning and Imputation
 
-## Visualizations
+Outlier Handling (Winsorizing)
 
-- PCA Scatter Plot
-- Cluster Feature Means (Bar Chart)
-- Heatmap of Feature Differences
+Feature Scaling (StandardScaler)
 
-## Files
+Determining Optimal Clusters (Elbow Method, Silhouette Score)
 
-- `Customer_Segmentation.ipynb`: Full code
-- `Report.pdf`: Detailed analysis and insights
-- `plots/`: Contains all result images
-- `dataset/`: Original dataset used
+Clustering with KMeans (K=3)
 
-## Results
+PCA for visualization
 
-- 2 clusters discovered with a Silhouette Score of **0.279**
-- Clear separation between high-value and risk-prone customers
-- Strategic business actions proposed for both segments
+Cluster interpretation and business recommendations
 
+Visualizations
+Elbow Method Plot
+
+Silhouette Score Plot
+
+PCA Scatter Plot
+
+Cluster Feature Means (Bar Charts)
+
+Results
+3 clusters discovered using K-Means, with an optimal number of clusters determined by both the Elbow Method and Silhouette Score.
+
+The Silhouette Score for the K-Means clustering is 0.224.
+
+Identified distinct customer segments:
+
+Engaged Transactors (Cluster 0): High spending activity, frequent card usage, and responsible credit behavior.
+
+High Spenders (Cluster 1): High spending activity, frequent card usage and responsible credit behavior.
+
+Low Spenders (Cluster 2): Lower spending and credit limits, moderate card usage.
+
+Strategic business actions are proposed for each segment, focusing on retention for high-value customers and growth for lower-activity segments.
